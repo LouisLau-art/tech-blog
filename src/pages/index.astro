@@ -1,8 +1,8 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import BaseHead from "../components/BaseHead.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
 ---
 
 <!doctype html>
@@ -13,36 +13,56 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 	<body>
 		<Header />
 		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
+			<h1>👋 Hi, I'm Louis!</h1>
 			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This template
-				serves as a lightweight, minimally-styled starting point for anyone looking to build a personal
-				website, blog, or portfolio with Astro.
+				欢迎来到我的<strong>Vibe Coding</strong>空间。
 			</p>
 			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to
-				<a href="https://docs.astro.build/">read the docs</a>
-				or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
+				我是一名来自华中师范大学伍伦贡联合研究院的研究生（研一），专注于<strong
+					>计算机技术</strong
+				>。 在这里，我探索 AI 驱动开发的无限可能，分享 <strong
+					>LLM 避坑与白嫖指南</strong
+				>，同时也记录我在<strong>时空预测</strong>科研方向上的探索。
 			</p>
 			<p>
-				Looking for a blog template with a bit more personality? Check out
-				<a href="https://github.com/Charca/astro-blog-template">astro-blog-template</a>
-				by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
+				<strong>我的信条：</strong>拥抱 AI，坚持开源，每天都要发点东西到
+				GitHub！
 			</p>
+
+			<div class="featured">
+				<h3>🔥 近期动态</h3>
+				<ul>
+					<li>
+						正在备战期末考试，即将发布 <strong
+							>《密码学救命指南》</strong
+						> 🔐
+					</li>
+					<li>深入研究 <strong>Vue + Astro</strong> 技术栈</li>
+					<li>
+						探索 <strong>Doubao Batch Translator</strong> 的极限性能
+					</li>
+				</ul>
+			</div>
+
+			<p>
+				无论你是对<strong>全栈开发</strong>感兴趣，还是在<strong
+					>考研</strong
+				>路上奋斗的伙伴，或者是对<strong>Spatio-Temporal GNN</strong
+				>好奇的科研党，都欢迎在这里驻足。
+			</p>
+
+			<div style="margin-top: 2rem;">
+				<a
+					href="/tech-blog/blog"
+					style="text-decoration: none; background: var(--accent); color: white; padding: 0.5rem 1rem; border-radius: 4px;"
+					>阅读我的博客 &rarr;</a
+				>
+				<a
+					href="/tech-blog/about"
+					style="text-decoration: none; margin-left: 1rem; color: var(--accent);"
+					>关于我 &rarr;</a
+				>
+			</div>
 		</main>
 		<Footer />
 	</body>
