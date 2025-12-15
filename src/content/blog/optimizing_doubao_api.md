@@ -4,8 +4,6 @@ description: 'Deep Dive: 架构设计、快慢双车道并发策略与人机协�
 pubDate: 'Dec 15 2025'
 ---
 
-# 榨干豆包 API 的每一滴性能：我是如何开发 Doubao Batch Translator 的
-
 最近，我终于完成了一个心心念念的项目——**Doubao Batch Translator**。
 
 这不仅仅是一个翻译脚本，更是一个为了极致挖掘**豆包（Doubao）**免费 API 额度而生的**高性能异步翻译工具**。从最初的简单 JSON 翻译，到后来支持 EPUB 电子书、HTML、Markdown，再到适配“沉浸式翻译”插件的 HTTP Server，这个项目的演进过程充满了技术挑战和架构优化的乐趣。
