@@ -35,9 +35,9 @@ Bob 不能直接用公钥 $h$ 加密，他需要引入一个随机数（Ephemera
 Alice 收到 $(c_1, c_2)$。
 
 1. Alice 利用私钥 $a$ 恢复共享秘密：
-  $$s = c_1^a = (g^r)^a = g^{ar}$$
+   $$s = c_1^a = (g^r)^a = g^{ar}$$
 2. Alice 除去遮盖，还原明文：
-  $$m = c_2 \cdot s^{-1} \bmod p$$
+   $$m = c_2 \cdot s^{-1} \bmod p$$
 
 ---
 
@@ -57,11 +57,10 @@ Alice 收到 $(c_1, c_2)$。
 我们将它们对应部分相乘（Component-wise multiplication）：
 
 1. **第一部分相乘:**
-  $$C_{new\_1} = g^{r_1} \cdot g^{r_2} = g^{r_1 + r_2}$$
-  
+   $$C_{new\_1} = g^{r_1} \cdot g^{r_2} = g^{r_1 + r_2}$$
+
 2. **第二部分相乘:**
-  $$C_{new\_2} = (m_1 \cdot h^{r_1}) \cdot (m_2 \cdot h^{r_2}) = (m_1 \cdot m_2) \cdot h^{r_1 + r_2}$$
-  
+   $$C_{new\_2} = (m_1 \cdot h^{r_1}) \cdot (m_2 \cdot h^{r_2}) = (m_1 \cdot m_2) \cdot h^{r_1 + r_2}$$
 
 **结论：**
 新的密文 $C_{new} = (g^{R}, M \cdot h^{R})$，其中 $R = r_1+r_2$， $M = m_1 \cdot m_2$。
