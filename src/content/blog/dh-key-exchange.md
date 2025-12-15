@@ -1,14 +1,8 @@
 ---
-title: '密码学复习笔记(1)：Diffie-Hellman 密钥交换'
+title: '🚀密码学复习笔记(1)：Diffie-Hellman 密钥交换'
 description: '期末考试复习记录。如何在一个有人偷听的房间里告诉对方秘密数字？DH 协议的核心逻辑梳理。'
 pubDate: 'Dec 15 2025'
 ---
-
-### **密码学复习笔记(1)：Diffie-Hellman 密钥交换**  
-
----
-
-#### **🚀 密码学复习：Diffie-Hellman (DH) 密钥交换**  
 
 最近正在备战 **Modern Cryptography** 期末考试。密码学中一个经典问题是：**Alice 和 Bob 如何在公共信道（可能被第三方窃听）上安全地协商一个只有他们两人知道的密钥？**  
 
