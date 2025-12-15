@@ -68,7 +68,7 @@ import db from '../../utils/db' // 或者 ~/server/utils/db
 
 ---
 
-## � 进阶技巧与细节打磨
+##  进阶技巧与细节打磨
 
 除了填坑，我们也在一些技术细节上做了深耕：
 
@@ -99,7 +99,7 @@ ExamSprint 的深色模式不是无脑反色。
 
 ---
 
-## �🚀 架构升级：从 LocalStorage 到 SQLite
+## 🚀 架构升级：从 LocalStorage 到 SQLite
 
 最初版 ExamSprint 数据存在浏览器里。这有个致命问题：我在电脑上制定的复习计划，躺在床上用手机看时就没了。
 
