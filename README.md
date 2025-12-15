@@ -1,62 +1,74 @@
-# Astro Starter Kit: Blog
+# 🚀 Louis's Tech Blog
 
-```sh
-bun create astro@latest -- --template blog
+我的个人技术博客，记录学习与开发过程中的心得体会。
+
+**在线访问**: [louislau-art.github.io/tech-blog](https://louislau-art.github.io/tech-blog)
+
+## ✨ 特性
+
+- ⚡ **Astro 5** - 零 JS 开销的静态站点生成器
+- 🎨 **Tailwind CSS v4** - 原子化 CSS 框架
+- 🌙 **暗色模式** - 跟随系统 + 手动切换
+- 💬 **Giscus 评论** - 基于 GitHub Discussions
+- 🚀 **GitHub Pages** - 自动部署 (GitHub Actions)
+- 📱 **响应式设计** - 移动端友好
+- 📝 **Markdown/MDX** - 专注内容写作
+
+## 📁 项目结构
+
 ```
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-Features:
-
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-├── public/
+tech-blog/
 ├── src/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
+│   ├── content/blog/     # 📝 博客文章 (.md)
+│   ├── components/       # 🧩 Astro 组件
+│   ├── layouts/          # 📐 页面布局
+│   ├── pages/            # 🔗 路由页面
+│   └── styles/           # 🎨 全局样式
+├── public/               # 📦 静态资源
+└── .github/workflows/    # ⚙️ 自动部署配置
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 🛠️ 常用命令
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+| 命令 | 说明 |
+|------|------|
+| `bun install` | 安装依赖 |
+| `bun run dev` | 启动开发服务器 (localhost:4321) |
+| `bun run build` | 构建生产版本 |
+| `bun run preview` | 预览构建产物 |
+| `bun run publish` | **一键发布** (git add + commit + push) |
 
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
+## ✍️ 写作流程
 
-Any static assets, like images, can be placed in the `public/` directory.
+1. 在 `src/content/blog/` 目录下创建新的 `.md` 文件
+2. 添加 frontmatter:
+   ```markdown
+   ---
+   title: '文章标题'
+   description: '文章描述'
+   pubDate: 'Dec 15 2025'
+   ---
+   ```
+3. 用 Markdown 编写内容
+4. 运行 `bun run publish` 一键发布
+5. 等待 1-2 分钟自动部署完成
 
-## 🧞 Commands
+## 🔧 本地开发
 
-All commands are run from the root of the project, from a terminal:
+```bash
+# 克隆项目
+git clone https://github.com/LouisLau-art/tech-blog.git
+cd tech-blog
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `bun install`             | Installs dependencies                            |
-| `bun dev`             | Starts local dev server at `localhost:4321`      |
-| `bun build`           | Build your production site to `./dist/`          |
-| `bun preview`         | Preview your build locally, before deploying     |
-| `bun astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `bun astro -- --help` | Get help using the Astro CLI                     |
+# 安装依赖
+bun install
 
-## 👀 Want to learn more?
+# 启动开发服务器
+bun run dev
+```
 
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+访问 http://localhost:4321/tech-blog/
 
-## Credit
+## 📜 License
 
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+MIT License © 2025 LouisLau-art
