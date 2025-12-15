@@ -1,7 +1,7 @@
 ---
 title: 'Hello World'
 description: '这是我的第一篇博客文章，欢迎来到我的技术博客！'
-pubDate: 'Dec 15 2024'
+pubDate: 'Dec 15 2025'
 ---
 
 # 欢迎来到我的技术博客！

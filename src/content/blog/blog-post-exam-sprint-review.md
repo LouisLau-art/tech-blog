@@ -1,8 +1,7 @@
 ---
 title: "ExamSprint 开发复盘：Nuxt 4、SQLite 与那些踩过的坑"
-date: 2025-12-15
+pubDate: 'Dec 15 2025'
 description: "一个全栈备考管理应用的开发实录。从 LocalStorage 到 SQLite，从 ApexCharts 到 nuxt-charts 再回滚，深度复盘 SSR 状态管理与 UI 细节打磨。"
-tags: ["Nuxt", "Vue", "SQLite", "Fullstack", "DevLog"]
 ---
 
 在过去的几天里，我开发了 **ExamSprint** —— 一个为考试冲刺设计的备考管理系统。这不仅仅是一个简单的 Todo List，而是一个集成了任务管理、目标追踪、番茄钟专注和数据统计的全栈应用。

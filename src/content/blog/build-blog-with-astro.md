@@ -1,7 +1,7 @@
 ---
 title: '从零开始：用 Astro + Tailwind CSS 搭建个人技术博客'
 description: '手把手教你使用 Astro、Tailwind CSS 和 GitHub Pages 搭建一个现代化的个人技术博客，支持暗色模式和评论系统。'
-pubDate: 'Dec 15 2024'
+pubDate: 'Dec 15 2025'
 ---
 
 作为一名开发者，拥有一个个人技术博客是非常有价值的。它不仅能记录你的学习成长，还能帮助他人解决问题。今天，我将分享如何从零开始搭建一个现代化的技术博客。
