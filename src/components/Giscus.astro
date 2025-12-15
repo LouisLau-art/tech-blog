@@ -1,0 +1,85 @@
+---
+/**
+ * Giscus 评论组件
+ * 使用 GitHub Discussions 作为评论系统
+ * 
+ * 配置说明:
+ * 1. 去 https://giscus.app 获取你的配置
+ * 2. 替换下面的占位符值
+ */
+
+interface Props {
+	/** 文章标题或唯一标识 */
+	term?: string;
+}
+
+const { term } = Astro.props;
+
+// TODO: 替换以下配置值
+// 从 https://giscus.app 获取这些值
+const giscusConfig = {
+	repo: 'LouisLau-art/tech-blog',
+	repoId: 'YOUR_REPO_ID',
+	category: 'Announcements',
+	categoryId: 'YOUR_CATEGORY_ID',
+	mapping: 'pathname',
+	reactionsEnabled: '1',
+	emitMetadata: '0',
+	inputPosition: 'top',
+	lang: 'zh-CN',
+};
+---
+
+<section class="giscus-container">
+	<script
+		src="https://giscus.app/client.js"
+		data-repo={giscusConfig.repo}
+		data-repo-id={giscusConfig.repoId}
+		data-category={giscusConfig.category}
+		data-category-id={giscusConfig.categoryId}
+		data-mapping={giscusConfig.mapping}
+		data-strict="0"
+		data-reactions-enabled={giscusConfig.reactionsEnabled}
+		data-emit-metadata={giscusConfig.emitMetadata}
+		data-input-position={giscusConfig.inputPosition}
+		data-theme="preferred_color_scheme"
+		data-lang={giscusConfig.lang}
+		crossorigin="anonymous"
+		async
+	></script>
+</section>
+
+<style>
+	.giscus-container {
+		margin-top: 3rem;
+		padding-top: 2rem;
+		border-top: 1px solid rgb(var(--gray-light));
+	}
+</style>
+
+<script is:inline>
+	// 监听主题切换，同步 Giscus 主题
+	function updateGiscusTheme() {
+		const isDark = document.documentElement.classList.contains('dark');
+		const theme = isDark ? 'dark' : 'light';
+		
+		const iframe = document.querySelector('iframe.giscus-frame');
+		if (iframe) {
+			iframe.contentWindow?.postMessage(
+				{ giscus: { setConfig: { theme } } },
+				'https://giscus.app'
+			);
+		}
+	}
+
+	// 监听主题切换按钮
+	const themeToggle = document.getElementById('theme-toggle');
+	if (themeToggle) {
+		themeToggle.addEventListener('click', () => {
+			setTimeout(updateGiscusTheme, 100);
+		});
+	}
+
+	// 监听系统主题变化
+	window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateGiscusTheme);
+</script>
