@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "publish": "git add -A && git commit -m \"update blog\" && git push"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.13",
