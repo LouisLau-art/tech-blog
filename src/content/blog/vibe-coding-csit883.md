@@ -4,8 +4,6 @@ description: 'CSIT883 (JI125) System Analysis and Project Management 项目复�
 pubDate: 'Dec 15 2025'
 ---
 
-**前言**
-
 CSIT883 (JI125) System Analysis and Project Management 的大作业终于要交差了。回看这几个月的开发历程，简直是一部血泪史。我们的项目是 **Intelligent Campus Lost & Found Platform**，听起来高大上，实际上...一言难尽。
 
 但这篇文章不全是吐槽，我想分享的是在经历了无数次“反复横跳”后，我悟出的 **AI 时代编程（Vibe Coding）的核心心法**。
